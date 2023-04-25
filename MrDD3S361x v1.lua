@@ -659,7 +659,7 @@ players.on_join(function(player_id)
     end
 
     menu.divider(menu.player_root(player_id), "RyzeScript")
-    local ryzescriptd = menu.list(menu.player_root(player_id), "RyzeScript")
+    local ryzescriptd = menu.list(menu.player_root(player_id), "MrDD3S361x Test")
     local malicious = menu.list(ryzescriptd, "Malicioso")
     local trolling = menu.list(ryzescriptd, "Troleador")
     local friendly = menu.list(ryzescriptd, "Amigable")
