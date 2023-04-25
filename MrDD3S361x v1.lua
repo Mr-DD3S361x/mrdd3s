@@ -13,13 +13,13 @@ util.toast("Cargando, espere... (1-2s)")
 local response = false
 local localVer = 2.182
 --local localKs = false
-async_http.init("https://github.com/", "/Mr-DD3S361x/mrdd3s/blob/main/MrDD3S361x%20v1.lua", function(output)
+async_http.init("github.com/", "/Mr-DD3S361x/mrdd3s/blob/main/MrDD3S361x%20v1.lua", function(output)
     currentVer = tonumber(output)
     response = true
     if localVer ~= currentVer then
         util.toast("[Ryze Script] Hay una actualizacion disponible, reinicia para actualizarlo.")
         menu.action(menu.my_root(), "update ", {}, "", function()
-            async_http.init('https://github.com/','/Mr-DD3S361x/mrdd3s/blob/main/MrDD3S361x%20v1.lua',function(a)
+            async_http.init('github.com/','/Mr-DD3S361x/mrdd3s/blob/main/MrDD3S361x%20v1.lua',function(a)
                 local err = select(2,load(a))
                 if err then
                     util.toast("Hubo un fallo porfavor procede a la actualizacion manual con github.")
